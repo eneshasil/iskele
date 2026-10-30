@@ -1,5 +1,7 @@
 # iskele
 
+<p align="center"><img src="assets/iskele.svg" alt="iskele: denize uzanan bir iskele, üzerinde proje dosyalarını taşıyan inşaat iskelesi ve yanaşmış ajan tekneleri" width="100%"></p>
+
 Ajanlarla (Claude Code, Codex ve diğerleri) çalışacağın yeni bir kod projesini tek komutla kurar.
 Ajanın ilk günden neyi nereye yazacağını bilir. Durum, geçmiş, fikir ve kararlar ayrı dosyalarda
 tutulur, iş yarıda kalırsa kaybolmaz.

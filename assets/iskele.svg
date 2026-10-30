@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="iskele: denize uzanan ahşap bir iskele, üzerinde inşaat iskelesi, yanaşmış küçük tekneler">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2445"/>
+      <stop offset="0.55" stop-color="#5a4a78"/>
+      <stop offset="1" stop-color="#f0a46b"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c4f7a"/>
+      <stop offset="1" stop-color="#121a33"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe2a8"/>
+      <stop offset="0.6" stop-color="#ffb877"/>
+      <stop offset="1" stop-color="#ffb877" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- gökyüzü ve güneş -->
+  <rect width="1280" height="420" fill="url(#sky)"/>
+  <circle cx="930" cy="400" r="150" fill="url(#sun)"/>
+  <circle cx="930" cy="410" r="62" fill="#ffd79a"/>
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="120" cy="70" r="1.6"/><circle cx="260" cy="40" r="1.2"/><circle cx="410" cy="95" r="1.4"/>
+    <circle cx="560" cy="55" r="1"/><circle cx="700" cy="30" r="1.5"/><circle cx="1080" cy="60" r="1.2"/>
+    <circle cx="1200" cy="110" r="1.6"/><circle cx="330" cy="150" r="1"/><circle cx="1150" cy="30" r="1"/>
+  </g>
+
+  <!-- deniz -->
+  <rect y="420" width="1280" height="220" fill="url(#sea)"/>
+  <g stroke="#ffd79a" stroke-linecap="round" opacity="0.7">
+    <line x1="880" y1="438" x2="980" y2="438" stroke-width="4"/>
+    <line x1="895" y1="456" x2="965" y2="456" stroke-width="3"/>
+    <line x1="905" y1="476" x2="955" y2="476" stroke-width="3"/>
+    <line x1="915" y1="500" x2="945" y2="500" stroke-width="2"/>
+  </g>
+  <g stroke="#8fa3d1" stroke-linecap="round" opacity="0.35" stroke-width="2">
+    <line x1="60" y1="470" x2="140" y2="470"/><line x1="300" y1="540" x2="380" y2="540"/>
+    <line x1="1080" y1="520" x2="1170" y2="520"/><line x1="720" y1="590" x2="800" y2="590"/>
+  </g>
+
+  <!-- iskele ayakları -->
+  <g fill="#3a2a22">
+    <rect x="90" y="400" width="12" height="120"/><rect x="230" y="400" width="12" height="120"/>
+    <rect x="370" y="400" width="12" height="120"/><rect x="510" y="400" width="12" height="120"/>
+    <rect x="650" y="400" width="12" height="120"/><rect x="780" y="400" width="12" height="120"/>
+  </g>
+  <!-- iskele tahtası -->
+  <rect x="0" y="388" width="810" height="22" fill="#8a5a3c"/>
+  <g stroke="#6b4430" stroke-width="2">
+    <line x1="60" y1="388" x2="60" y2="410"/><line x1="140" y1="388" x2="140" y2="410"/>
+    <line x1="220" y1="388" x2="220" y2="410"/><line x1="300" y1="388" x2="300" y2="410"/>
+    <line x1="380" y1="388" x2="380" y2="410"/><line x1="460" y1="388" x2="460" y2="410"/>
+    <line x1="540" y1="388" x2="540" y2="410"/><line x1="620" y1="388" x2="620" y2="410"/>
+    <line x1="700" y1="388" x2="700" y2="410"/>
+  </g>
+  <rect x="0" y="384" width="810" height="6" fill="#a87250"/>
+
+  <!-- inşaat iskelesi: yapılmakta olan proje -->
+  <g transform="translate(70 0)">
+  <g stroke="#d9a441" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="430" y1="384" x2="430" y2="170"/><line x1="530" y1="384" x2="530" y2="170"/>
+    <line x1="630" y1="384" x2="630" y2="170"/>
+    <line x1="420" y1="330" x2="640" y2="330"/><line x1="420" y1="275" x2="640" y2="275"/>
+    <line x1="420" y1="220" x2="640" y2="220"/><line x1="420" y1="172" x2="640" y2="172"/>
+    <line x1="430" y1="384" x2="530" y2="330"/><line x1="530" y1="330" x2="630" y2="275"/>
+    <line x1="430" y1="275" x2="530" y2="220"/><line x1="530" y1="220" x2="630" y2="172"/>
+  </g>
+  <!-- iskelenin içindeki dosya blokları -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" text-anchor="middle">
+    <rect x="440" y="337" width="80" height="40" rx="4" fill="#f4ead8"/><text x="480" y="362" fill="#3a2a22">AGENTS</text>
+    <rect x="540" y="337" width="80" height="40" rx="4" fill="#f4ead8"/><text x="580" y="362" fill="#3a2a22">const</text>
+    <rect x="440" y="282" width="80" height="40" rx="4" fill="#e9dcc3"/><text x="480" y="307" fill="#3a2a22">backlog</text>
+    <rect x="540" y="282" width="80" height="40" rx="4" fill="#e9dcc3"/><text x="580" y="307" fill="#3a2a22">NOTES</text>
+    <rect x="440" y="227" width="80" height="40" rx="4" fill="#f4ead8" opacity="0.55"/><text x="480" y="252" fill="#3a2a22" opacity="0.7">log</text>
+    <rect x="540" y="227" width="80" height="40" rx="4" fill="#f4ead8" opacity="0.3" stroke="#f4ead8" stroke-dasharray="5 4"/>
+  </g>
+  <!-- vinç kancası -->
+  <line x1="630" y1="172" x2="700" y2="150" stroke="#d9a441" stroke-width="5" stroke-linecap="round"/>
+  <line x1="690" y1="153" x2="690" y2="205" stroke="#c9c2b3" stroke-width="2"/>
+  <rect x="664" y="205" width="52" height="30" rx="4" fill="#f4ead8"/>
+  <text x="690" y="225" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" text-anchor="middle" fill="#3a2a22">.env✕</text>
+
+  </g>
+
+  <!-- yanaşmış ajan tekneleri -->
+  <g>
+    <path d="M150 448 h120 l-18 26 h-84 z" fill="#e4e8f2"/>
+    <line x1="210" y1="448" x2="210" y2="404" stroke="#e4e8f2" stroke-width="3"/>
+    <path d="M212 406 l34 14 l-34 14 z" fill="#f0a46b"/>
+    <line x1="150" y1="448" x2="100" y2="404" stroke="#c9c2b3" stroke-width="1.5"/>
+  </g>
+  <g>
+    <path d="M700 452 h104 l-16 22 h-72 z" fill="#e4e8f2"/>
+    <line x1="752" y1="452" x2="752" y2="414" stroke="#e4e8f2" stroke-width="3"/>
+    <path d="M754 416 l30 12 l-30 12 z" fill="#8fd1b5"/>
+    <line x1="700" y1="452" x2="660" y2="408" stroke="#c9c2b3" stroke-width="1.5"/>
+  </g>
+  <g opacity="0.85">
+    <path d="M1040 470 h70 l-11 16 h-48 z" fill="#c9cfe0"/>
+    <line x1="1075" y1="470" x2="1075" y2="442" stroke="#c9cfe0" stroke-width="2.5"/>
+    <path d="M1077 444 l22 9 l-22 9 z" fill="#b9a3e8"/>
+  </g>
+  <!-- tekne yansımaları -->
+  <g fill="#e4e8f2" opacity="0.12">
+    <path d="M168 476 h84 l10 14 h-104 z"/><path d="M716 476 h72 l9 12 h-90 z"/>
+  </g>
+
+  <!-- başlık -->
+  <text x="70" y="140" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="96" font-weight="800" fill="#fff4e3" letter-spacing="-2">iskele</text>
+  <text x="74" y="186" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#e9dcf5">ajanların yanaştığı proje iskeleti</text>
+  <text x="74" y="595" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" fill="#9fb0d8">$ iskele yeni-proje</text>
+</svg>
