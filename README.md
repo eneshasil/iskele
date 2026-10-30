@@ -45,6 +45,7 @@ GitHub adımı için [`gh`](https://cli.github.com) kurulu ve `gh auth login` ya
 | `const.md` | Projenin değişmez gerçekleri. Ajan senin onayın olmadan değiştirmez. |
 | `backlog.md` | Açık ve yarıda kalan işler. Ajan işe başlarken önce buraya yazar. |
 | `backlog-log.md` | Olanların kaydı. Yalnız sona eklenir, eski satırlar değişmez. |
+| `reports/` | Araştırma ve keşif raporları. Alt agent bulgusunu buraya yazar, şefe yalnız özet döner. |
 | `NOTES.md` | Fikirleşme: ham dump `Taslak`'a, onayladıkların `Kesinleşmiş`'e. |
 | `DECISIONS.md` | "X yerine neden Y" kararları: tarih, alternatif, gerekçe. |
 | `.gitignore`, `.env`, `.env.example` | `.env` ilk commit'ten önce dışarıda bırakılır; sır geçmişe hiç girmez. |
@@ -58,6 +59,7 @@ GitHub adımı için [`gh`](https://cli.github.com) kurulu ve `gh auth login` ya
 - **Sahiplik:** aynı dosyaya iki agent gitmez. Büyük paralel işte her agent kendi worktree'sinde çalışır.
 - **Commit:** alt agent yalnız kendi branch'ine commit atar. Ortak klasörde `reset`, `checkout`, `stash` yapmaz.
 - **Kayıt:** bulgular `backlog-log.md`'ye eklenir, `backlog.md`'yi yalnız şef günceller.
+- **Rapor:** keşif bulguları `reports/` altında dosyaya yazılır; şefin bağlamı dolmaz, sonraki oturum aynı keşfi tekrarlamaz.
 - **Doğrulama:** kritik işi ayrı bir denetçi kontrol eder. Düzeltme geri alınınca kırılmayan test sahtedir.
 - **Tekrarlayan sorun kurala dönüşür.**
 

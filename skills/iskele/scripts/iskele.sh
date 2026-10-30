@@ -52,6 +52,8 @@ değişiklik yalnız burada yapılır.
 - @backlog.md — açık ve yarıda kalmış işler.
 - DECISIONS.md — bir kararı sorgulamadan önce gerekçesine bak.
 - backlog-log.md yalnız gerektiğinde okunur (son satırlar ya da grep); tamamını yükleme.
+- reports/ — araştırma ve keşif raporları. Bir konuya başlamadan ilgili raporu ara (ls/grep);
+  varsa aynı keşfi baştan yapma.
 
 ## Çalışma kuralları
 - **Önce yaz:** Bir işe başlarken backlog.md'ye \`[devam]\` satırı ekle; iş bitince satırı sil
@@ -74,6 +76,8 @@ değişiklik yalnız burada yapılır.
   Ortak çalışma dizininde commit, \`git reset\`, \`git checkout\` ya da \`git stash\` yapmaz.
 - **Kayıt:** Alt agent bulgusunu backlog-log.md'nin sonuna kendi adıyla ekler;
   backlog.md'yi yalnız şef günceller.
+- **Rapor:** Araştırma ya da keşif yapan alt agent bulgusunu \`reports/YYYY-MM-DD-konu.md\`
+  dosyasına yazar; şefe yalnız kısa özet ve dosya yolunu döner. Şefin bağlamı böyle dolmaz.
 - **Doğrulama:** Kritik işte ayrı bir denetçi agent sonucu sıfır bağlamla kontrol eder.
   Yeni test, düzeltme geri alınınca kırılmalı; kırılmıyorsa test sahtedir.
 - **Tekrarlayan sorun:** Aynı hata iki kez çıkarsa kuralı bu dosyaya ekle.
@@ -101,6 +105,15 @@ cat > NOTES.md <<'EOF'
 
 ## Taslak
 <!-- Ham dump. Oturum kopsa da kaybolmasın diye hemen buraya yazılır. -->
+EOF
+
+mkdir -p reports
+cat > reports/README.md <<'EOF'
+# Raporlar
+
+Araştırma ve keşif çıktıları. Her rapor ayrı dosya: `YYYY-MM-DD-konu.md`.
+Başta 3-5 satır özet, sonra ayrıntı ve kaynaklar. Eski raporlar silinmez;
+geçersizleşen raporun başına `> Geçersiz: <tarih> · <neden>` satırı eklenir.
 EOF
 
 cat > backlog.md <<'EOF'

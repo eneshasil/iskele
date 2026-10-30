@@ -1,6 +1,6 @@
 ---
 name: iskele
-description: Ajanlarla çalışılacak yeni bir kod projesi açar; AGENTS.md/CLAUDE.md, const, NOTES, backlog + append-only log, DECISIONS, gitignored .env ve GitHub reposunu tek komutla kurar. Kullanıcı "yeni proje aç", "proje iskeleti kur", "yeni repo başlat" dediğinde kullan.
+description: Ajanlarla çalışılacak yeni bir kod projesi açar; AGENTS.md/CLAUDE.md, const, NOTES, backlog + append-only log, reports/, DECISIONS, gitignored .env ve GitHub reposunu tek komutla kurar. Kullanıcı "yeni proje aç", "proje iskeleti kur", "yeni repo başlat" dediğinde kullan.
 ---
 
 # iskele
